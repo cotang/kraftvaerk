@@ -1,0 +1,33 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  +e.upper
+    .container
+      +e.wrapper
+        +e.H1.title Tekijäpankki
+        +e.logo
+          // Logo
+          +b.A.logo(href="#")
+            img(src="img/logo.png")
+
+  +e.nav
+    .container
+      +b.NAV.nav
+        +e.hamburger
+          +b.A.hamburger(href="javascript:void(0);")
+            span
+
+        +e.UL.list
+          +e.item
+            a(href="#") H
+          +e.item
+            a(href="#") Tekijät
+          +e.item
+            a(href="#") Tietoa palvelusta
+
+
+    +e.btn
+      +b.A.btn.btn--header(href="#") Pyydä tarjous
+
+

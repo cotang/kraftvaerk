@@ -1,0 +1,167 @@
+.submit{
+  background-color: $grey-bg;
+  background-repeat: no-repeat, no-repeat;
+  background-image: url(../img/bg4-top.png),
+                    url(../img/bg4-bottom.png);
+  background-position: center top, center bottom;
+  padding: 85px 0 160px;
+  @media (max-width: $breakpoint-md){
+    background-image: none;
+    padding: 45px 0 100px;
+  }
+
+  &__title{
+    margin: 0 0 70px;
+    @include font-family('Trade Gothic', normal, normal);
+    font-size: 52px;
+    line-height: (49/52);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey-title;
+    @media (max-width: $breakpoint-md){
+      font-size: 40px;
+      line-height: 1;
+      margin: 0 0 25px;
+    }
+    span{
+      color: $blue;
+      @media (max-width: $breakpoint-md){
+        display: block;
+      }
+    }
+  }
+  &__form-wrapper{
+    margin: 0 10px;
+    padding: 50px 40px 40px;
+    background-color: #fff;
+    position: relative;
+    @media (max-width: $breakpoint-md){
+      padding: 7px 0 0;
+      background-color: transparent;
+    }
+  }
+  &__text{
+    margin: 0 100px 80px;
+    font-size: 24px;
+    line-height: (34/24);
+    letter-spacing: 0.01em;
+    text-align: center;
+    @media (max-width: $breakpoint-md){
+      margin: 0 25px 0;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+  }
+  &__form{
+    padding: 0 20px 0 260px;
+    @media (max-width: $breakpoint-md){
+      padding: 0 10px 0;
+    }
+  }
+  &__img{
+    display: block;
+    width: 420px;
+    height: 428px;
+    background-repeat: no-repeat;
+    background-image: url(../img/book.png);
+    background-size: contain;
+    position: absolute;
+    pointer-events: none;
+    bottom: -105px;
+    left: -50px;
+    @media (max-width: $breakpoint-md){
+      width: 100%;
+      height: auto;
+      position: static;
+      margin: 0 0 -15px;
+    }
+  }
+}
+
+.form{
+  @include font-family('Open Sans', normal, normal);
+  &__label{
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 20px;
+    @media (max-width: $breakpoint-md){
+      flex-direction: column;
+      margin: 0 0 10px;
+    }
+    span{
+      flex: 0 0 120px;
+      color: $blue;
+      font-size: 16px;
+      line-height: (18/16);
+      @media (max-width: $breakpoint-md){
+        flex: 0 0 auto;
+        display: inline-block;
+        margin: 10px 0;
+      }
+    }
+  }
+  &__input{
+    flex: 1 1 auto;
+    padding: 10px;
+    font-size: 16px;
+    line-height: (18/16);
+    color: $grey-input-text;
+    border: 1px solid $grey-input-border;
+    width: 100%;
+    @media (max-width: $breakpoint-md){
+      padding: 7px 10px;
+    }
+
+    &::-webkit-input-placeholder{
+      color: $grey-input-text;
+    }
+    &::placeholder{
+      color: $grey-input-text;
+    }
+
+    &:hover{
+      color: $grey-input-text-hover;
+      border: 1px solid $grey-input-border-hover;
+    }
+    &:hover::-webkit-input-placeholder{
+      color: $grey-input-text-hover;
+    }
+    &:hover::placeholder{
+      color: $grey-input-text-hover;
+    }
+
+    &:focus{
+      outline: none;
+      color: $grey-input-text-focus;
+      border: 1px solid $grey-input-border-focus;
+      box-shadow: 0px 0px 2.65px 2.35px rgba(232, 232, 232, 0.55);
+    }
+    &:focus::-webkit-input-placeholder{
+      color: $grey-input-text-focus;
+    }
+    &:focus::placeholder{
+      color: $grey-input-text-focus;
+    }
+
+    &:active{
+      color: $grey-input-text-active;
+      border: 1px solid $grey-input-border-focus;
+    }
+    &:disabled{
+      color: $grey-input-text-disabled;
+      border: 1px solid $grey-input-border-disabled;
+      background-color: $grey-input-text-disabled;
+    }
+  }
+
+  &__btn{
+    margin: 40px 0 0;
+    text-align: right;
+    @media (max-width: $breakpoint-md){
+      margin: 50px 0 0;
+    }
+  }
+}
+
+

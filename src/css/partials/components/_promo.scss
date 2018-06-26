@@ -1,0 +1,138 @@
+.promo{
+  min-height: 530px;
+  position: relative;
+  @media (max-width: $breakpoint-md){
+    min-height: 490px;
+  }
+
+  &__gallery{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .slick-dots{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 12px;
+      padding-left: 0;
+      margin: 0;
+      list-style-type: none;
+      @media (max-width: $breakpoint-md){
+        bottom: 0;
+      }
+
+      li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 6px;
+        @media (max-width: $breakpoint-md){
+          margin: 0 3px;
+        }
+
+        button{
+          color: transparent;
+          border: 1px solid $white;
+          background-color: $white;
+          display: block;
+          padding: 0;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          @media (max-width: $breakpoint-md){
+            width: 6px;
+            height: 6px;
+          }
+
+          &:focus{
+            outline: none;
+            border: 1px dashed $green;
+          }
+        }
+      }
+      .slick-active{
+        button{
+          width: 11px;
+          height: 11px;
+          border: 1px solid $green;
+          background-color: $green;
+          @media (max-width: $breakpoint-md){
+            width: 6px;
+            height: 6px;
+          }
+        }
+      }
+    }
+  }
+  &__slide{
+    width: 100%;
+    height: 530px;
+    @media (max-width: $breakpoint-md){
+      height: 490px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__text-wrapper{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: $white;
+    padding: 155px 0 0;
+    @media (max-width: $breakpoint-md){
+      padding: 100px 0 0;
+    }
+  }
+  &__title{
+    margin: 0;
+    @include font-family('Trade Gothic', normal, normal);
+    font-size: 82px;
+    line-height: (72/82);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    @media (max-width: $breakpoint-md){
+      font-size: 40px;
+      line-height: 1;
+    }
+    span{
+      display: block;
+      color: $green;
+    }
+  }
+  &__text{
+    max-width: 500px;
+    margin: 10px auto 0;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    line-height: (35/25);
+    @media (max-width: $breakpoint-md){
+      margin: 30px 0 auto;
+      font-size: 18px;
+      line-height: 1.15;
+    }
+  }
+  &__description{
+    margin: 65px 0 0;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: (35/18);
+    @include font-family('Trade Gothic', normal, normal);
+    text-transform: uppercase;
+    @media (max-width: $breakpoint-md){
+      margin: 15px 0 auto;
+      font-size: 16px;
+      line-height: 1.15;
+    }
+    span{
+      color: $green;
+      @media (max-width: $breakpoint-md){
+        display: block;
+      }
+    }
+  }
+}

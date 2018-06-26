@@ -1,0 +1,88 @@
+/*
+  Project variables
+  =================
+*/
+
+
+/*
+  Flex Sass grid generator variables
+  ==================================
+*/
+
+$base-font-size:              16px;
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+
+
+$screen-xs:                   0; // Extra small screen / phone
+$screen-md:                   750px; // Medium screen / tablet
+$screen-xl:                   960px; // Extra large screen / wide desktop
+
+
+// Only for the overlay gallery
+$breakpoint-md:               749px; // Medium screen / tablet
+$breakpoint-xl:               959px; // Extra large screen / wide desktop
+
+
+//------------------------------------------------------------------------------
+//  Colors
+//------------------------------------------------------------------------------
+
+
+// Color table
+
+$white:                       #ffffff;
+$black:                       #000000;
+
+$green:                       #64c800;
+$green-hover:                 #67ad21;
+$green-active:                #497f12;
+$green-border-bottom:         #59b200;
+
+
+$blue:                        #1b8aaa;
+$blue-hover:                  #596799;
+$blue-focus:                  #78c5db;
+$blue-active:                 #687bc4;
+$blue-disabled:               #80c9de;
+
+
+$grey-bg:                     #f4f6f9;
+
+$grey-header:                 #3f4049;
+$grey-title:                  #3d3e46;
+$grey-text:                   #505a64;
+$grey-form-text:              #46505a;
+
+$grey-input-text:             #a8b6c7;
+$grey-input-border:           #a8b6c7;
+
+$grey-input-text-hover:       #c3c3c3;
+$grey-input-border-hover:     #a8a9ab;
+$grey-input-text-focus:       #c3c3c3;
+$grey-input-border-focus:     #e8e8e8;
+
+$grey-input-text-active:      #6e6c6c;
+
+$grey-input-text-disabled:    #c3c3c3;
+$grey-input-border-disabled:  #e8e8e8;
+$grey-input-bg-disabled:      #f5f5f5;
+
+
+
+
+
+//------------------------------------------------------------------------------
+//  Typography
+//------------------------------------------------------------------------------
+
+
+//$font-family--serif:          Georgia, "Times New Roman", Times, serif;
+//$font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+
+$font-size:                   18px;
+
+

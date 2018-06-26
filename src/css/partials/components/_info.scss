@@ -1,0 +1,88 @@
+.info{
+  background-repeat: no-repeat;
+  background-image: url(../img/info-bg.jpg);
+  background-position: center top;
+  background-size: cover;
+  padding: 80px 0 50px;
+  color: $white;
+  text-align: center;
+  @media (max-width: $breakpoint-md){
+    background-image: url(../img/info-bg-mobile.jpg);
+    padding: 50px 0 55px;
+  }
+
+  &__title{
+    margin: 0 0 40px;
+    @include font-family('Trade Gothic', normal, normal);
+    font-size: 52px;
+    line-height: (49/52);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: $breakpoint-md){
+      font-size: 40px;
+      line-height: 1;
+      margin: 0 0 25px;
+    }
+    span{
+      color: $green;
+      @media (max-width: $breakpoint-md){
+        display: block;
+      }
+    }
+  }
+  &__text1{
+    font-size: 25px;
+    line-height: (35/25);
+    letter-spacing: 0.01em;
+    @media (max-width: $breakpoint-md){
+      font-size: 14px;
+      line-height: 1.175;
+      padding: 0 30px;
+      margin: 0 0 20px;
+    }
+  }
+  &__text2{
+    font-size: 20px;
+    line-height: (28/20);
+    letter-spacing: 0.015em;
+    padding: 0 60px;
+    @media (max-width: $breakpoint-md){
+      font-size: 14px;
+      line-height: 1.05;
+      padding: 0 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__text3{
+    color: $green;
+    font-size: 20px;
+    line-height: (28/20);
+    letter-spacing: 0.015em;
+    padding: 0 150px;
+    @media (max-width: $breakpoint-md){
+      font-size: 14px;
+      line-height: 1.05;
+      padding: 0 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__text4{
+    font-size: 25px;
+    line-height: (26/25);
+    letter-spacing: 0.015em;
+    padding: 0 60px;
+    @media (max-width: $breakpoint-md){
+      font-size: 14px;
+      line-height: 1.05;
+      padding: 0 30px;
+    }
+  }
+  &__btn{
+    text-align: center;
+    margin: 20px 0 0;
+    @media (max-width: $breakpoint-md){
+      margin: 25px 20px 0;
+    }
+  }
+}

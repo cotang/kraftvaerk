@@ -1,0 +1,112 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$s-spot1-name: 's-spot1';
+$s-spot1-x: 0px;
+$s-spot1-y: 38px;
+$s-spot1-offset-x: 0px;
+$s-spot1-offset-y: -38px;
+$s-spot1-width: 65px;
+$s-spot1-height: 30px;
+$s-spot1-total-width: 139px;
+$s-spot1-total-height: 68px;
+$s-spot1-image: '../img/png-sprite.png';
+$s-spot1: (0px, 38px, 0px, -38px, 65px, 30px, 139px, 68px, '../img/png-sprite.png', 's-spot1', );
+$s-spot2-name: 's-spot2';
+$s-spot2-x: 0px;
+$s-spot2-y: 0px;
+$s-spot2-offset-x: 0px;
+$s-spot2-offset-y: 0px;
+$s-spot2-width: 70px;
+$s-spot2-height: 36px;
+$s-spot2-total-width: 139px;
+$s-spot2-total-height: 68px;
+$s-spot2-image: '../img/png-sprite.png';
+$s-spot2: (0px, 0px, 0px, 0px, 70px, 36px, 139px, 68px, '../img/png-sprite.png', 's-spot2', );
+$s-spot3-name: 's-spot3';
+$s-spot3-x: 72px;
+$s-spot3-y: 0px;
+$s-spot3-offset-x: -72px;
+$s-spot3-offset-y: 0px;
+$s-spot3-width: 67px;
+$s-spot3-height: 36px;
+$s-spot3-total-width: 139px;
+$s-spot3-total-height: 68px;
+$s-spot3-image: '../img/png-sprite.png';
+$s-spot3: (72px, 0px, -72px, 0px, 67px, 36px, 139px, 68px, '../img/png-sprite.png', 's-spot3', );
+$spritesheet-width: 139px;
+$spritesheet-height: 68px;
+$spritesheet-image: '../img/png-sprite.png';
+$spritesheet-sprites: ($s-spot1, $s-spot2, $s-spot3, );
+$spritesheet: (139px, 68px, '../img/png-sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

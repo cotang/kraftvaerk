@@ -1,0 +1,59 @@
+//------------------------------------------------------------------------------
+//  Базовые стили
+//------------------------------------------------------------------------------
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  margin: 0;
+  background-color: $white;
+  color: $grey-text;
+  @include font-family('Myriad Pro', normal, normal);
+  font-size: $font-size;
+  line-height: normal;
+}
+
+
+a {
+  color: $grey-text;
+
+  text-decoration: none;
+  @include transition();
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+button, input[type="submit"]{
+  @include transition();
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $screen-xl;
+
+  @media (max-width: $breakpoint-xl){
+    max-width: $screen-md;
+  }
+  @media (max-width: $breakpoint-md){
+    max-width: 100%;
+  }
+}
