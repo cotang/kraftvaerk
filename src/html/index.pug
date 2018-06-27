@@ -3,81 +3,100 @@ extends partials/templates/_template.pug
 block content
   +b.SECTION.page
 
-    // Search section
-    +b.SECTION.search-section
-      .container
-        +e.wrapper
-          +e.H4.title Hae
-          +e.label
-            +e.INPUT.input(type="text", name="search", placeholder="Last name")
-          +e.sort
-            +b.sort
-              +e.H4.title Lajitteluperuste
-              +e.UL.list
-                +e.item
-                  a(href="#") Työnäytteet
-                +e.item
-                  a(href="#") Nimi
-                +e.item
-                  a(href="#") Palaute
-
-    // Categories section
-    +b.SECTION.categories-section
-      .container
-        +e.H4.title Valitse maalaustyö
-        +e.UL.list
-          +e.item
-            a(href="#") Terassit
-          +e.item
-            a(href="#") Katot
-          +e.item
-            a(href="#") Puujulkisivut
-          +e.item
-            a(href="#") Tasoitustyöt
-          +e.item
-            a(href="#") Efektimaalaus
-          +e.item
-            a(href="#") Sisämaalaukset
-          +e.item
-            a(href="#") Lattiat
-          +e.item
-            a(href="#") Kivijulkisivut ja sokkelit
-          +e.item
-            a(href="#") Ovet ikkunat ja kalusteet
-      +e.text
+    // Search controls
+    +b.SECTION.search-controls
+      +e.upper
         .container
-          p Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!
+          +e.wrapper
+            +e.search
+              +b.SECTION.search
+                +e.H4.title.title Hae
+                +e.label
+                  +e.INPUT.input(type="text", name="search")
+                  +e.BUTTON.button(type="button", aria-hidden="search")
+                    svg(width='24', height='24')
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon-search')
+
+            +e.sort
+              +b.SECTION.sort
+                +e.H4.title.title Lajitteluperuste
+                +e.UL.list
+                  +e.item.--active.sort-projects
+                    a(href="#") Työnäytteet
+                  +e.item.sort-name
+                    a(href="#") Nimi
+                  +e.item.sort-feedback
+                    a(href="#") Palaute
+
+      +e.categories
+        // Categories
+        +b.SECTION.categories
+          .container
+            +e.H4.title.title Valitse maalaustyö
+            +e.UL.list
+              +e.item(data-cat="Terassit")
+                a(href="#") Terassit
+              +e.item(data-cat="Katot")
+                a(href="#") Katot
+              +e.item(data-cat="Puujulkisivut")
+                a(href="#") Puujulkisivut
+              +e.item(data-cat="Tasoitustyöt")
+                a(href="#") Tasoitustyöt
+              +e.item(data-cat="Efektimaalaus")
+                a(href="#") Efektimaalaus
+              +e.item(data-cat="Sisämaalaukset")
+                a(href="#") Sisämaalaukset
+              +e.item(data-cat="Lattiat")
+                a(href="#") Lattiat
+              +e.item(data-cat="Kivijulkisivut")
+                a(href="#") Kivijulkisivut ja sokkelit
+              +e.item(data-cat="Ovet")
+                a(href="#") Ovet ikkunat ja kalusteet
+          +e.text
+            .container
+              p Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!
 
 
     // Search results
     +b.SECTION.search-results
       .container
+        +e.painters
 
-        +b.painter
-          +e.logo
-            img(src="img/logo.png")
-          +e.text-wrapper
-            +e.H2.title Tammijuuri
-            +e.ADDRESS.address
-              +e.location HELSINKI
-              +e.tel +358407350437
-              +e.email lauri@tammijuuri.fi
-            +e.text Tammijuuri on ystävällinen ja ihmisläheinen maalausliike Helsingistä. Keskityn pääasiassa asuinhuoneistojen ja pienten liiketilojen pintakäsittelyyn. Toiminta-alueeni on pääosin pääkaupunkiseudulla. Maalarin palveluiden lisäksi teen myös tapetoinnit, laminaattilattioiden asennukset, nauhoitus-, tasoite-, ja verkotustyöt sekä pienet ulkomaalaustyöt ammattitaidolla ja asiakkaiden toiveiden ehdolla. Maalauspalvelussani huomioin ympäristön ja luonnon muun muassa kierrättämällä kaiken mahdollisen työstä aiheutuvan jätteen ja käyttämällä ympäristöystävällisiä tarvikkeita ja materiaaleja.
-            +e.categories
-              span Terassit
-              span Katot
-              span Puujulkisivut
-              span Tasoitustyöt
-              span Sisämaalaukset
-              span Lattiat
-              span Ovet ikkunat ja kalusteet
-          +e.request
-            +b.A.btn.btn--header(href="#") Pyydä tarjous!
-            +e.projects-count 11
+          +b.ARTICLE.painter
+            +e.wrapper
+              +e.logo
+                +e.img
+                  img(src="img/img01.png")
+              +e.text-wrapper
+                +e.H2.title
+                  a(href="#") Tammijuuri
+                +e.ADDRESS.address
+                  +e.location
+                    svg(width='10', height='16')
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#pin')
+                    span HELSINKI
+                  +e.tel
+                    svg(width='12', height='16')
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#tel')
+                    a(href="tel:+358407350437") +358407350437
+                  +e.email
+                    svg(width='18', height='11')
+                      use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#email')
+                    a(href="mailto:lauri@tammijuuri.fi") lauri@tammijuuri.fi
 
-
-
-                  //- svg(width='30', height='30')
-                  //-   use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#mail')
-
+                +e.text Tammijuuri on ystävällinen ja ihmisläheinen maalausliike Helsingistä. Keskityn pääasiassa asuinhuoneistojen ja pienten liiketilojen pintakäsittelyyn. Toiminta-alueeni on pääosin pääkaupunkiseudulla. Maalarin palveluiden lisäksi teen myös tapetoinnit, laminaattilattioiden asennukset, nauhoitus-, tasoite-, ja verkotustyöt sekä pienet ulkomaalaustyöt ammattitaidolla ja asiakkaiden toiveiden ehdolla. Maalauspalvelussani huomioin ympäristön ja luonnon muun muassa kierrättämällä kaiken mahdollisen työstä aiheutuvan jätteen ja käyttämällä ympäristöystävällisiä tarvikkeita ja materiaaleja.
+                +e.categories
+                  span Terassit
+                  span Katot
+                  span Puujulkisivut
+                  span Tasoitustyöt
+                  span Sisämaalaukset
+                  span Lattiat
+                  span Ovet ikkunat ja kalusteet
+              +e.request
+                +b.A.btn(href="#") Pyydä tarjous!
+                +e.projects-count 
+                  svg(width='14', height='16')
+                    use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#house')
+                  span 11
 

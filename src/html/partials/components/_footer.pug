@@ -3,21 +3,21 @@ include ../abstracts/bemto/bemto.pug
 // Footer
 +b.FOOTER.footer
   .container
-    +e.wrapper
-      +e.item
+    +e.row
+      +e.col--large
         +e.H4.title Löydä lähin luotettava tekijä!
         +e.text
           p Tekijäpankista löydät osaavat ja luotettavat tekijät maalaustyöllesi.
           p
             a(href="#") Lue lisää
-      +e.item
+      +e.col
         +e.H4.title Yleistä
         +e.UL.list
           +e.item
             a(href="#") Tietoa palvelusta
           +e.item
             a(href="#") Ota yhteyttä
-      +e.item
+      +e.col
         +e.H4.title Seuraa meitä
         +e.UL.list
           +e.item
@@ -26,7 +26,8 @@ include ../abstracts/bemto/bemto.pug
             a(href="#") Google+
 
 
-  +e.copyright © 2016 Tikkurila Oyj - www.tikkurila.fi
+  +e.copyright © 2016 Tikkurila Oyj - 
+    a(href="") www.tikkurila.fi
 
 
 

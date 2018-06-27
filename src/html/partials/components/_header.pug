@@ -4,30 +4,32 @@ include ../abstracts/bemto/bemto.pug
 +b.HEADER.header
   +e.upper
     .container
-      +e.wrapper
+      +e.title-wrapper
         +e.H1.title Tekijäpankki
         +e.logo
           // Logo
           +b.A.logo(href="#")
-            img(src="img/logo.png")
+            img(src="img/logo.svg", alt="")
 
   +e.nav
     .container
-      +b.NAV.nav
-        +e.hamburger
-          +b.A.hamburger(href="javascript:void(0);")
-            span
+      +e.nav-wrapper
+        +b.NAV.nav
+          +e.hamburger
+            +b.A.hamburger(href="javascript:void(0);")
+              span
 
-        +e.UL.list
-          +e.item
-            a(href="#") H
-          +e.item
-            a(href="#") Tekijät
-          +e.item
-            a(href="#") Tietoa palvelusta
+          +e.UL.list
+            +e.item
+              a(href="#")
+                svg(width='18', height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#house-white')
+            +e.item
+              a(href="#") Tekijät
+            +e.item
+              a(href="#") Tietoa palvelusta
 
-
-    +e.btn
-      +b.A.btn.btn--header(href="#") Pyydä tarjous
+        +e.btn
+          +b.A.btn.btn--header(href="#") Pyydä tarjous
 
 

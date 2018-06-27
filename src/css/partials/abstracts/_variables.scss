@@ -21,7 +21,7 @@ $screen-xl:                   960px; // Extra large screen / wide desktop
 
 
 // Only for the overlay gallery
-$breakpoint-md:               749px; // Medium screen / tablet
+$breakpoint-md:               769px; // Medium screen / tablet
 $breakpoint-xl:               959px; // Extra large screen / wide desktop
 
 
@@ -32,44 +32,20 @@ $breakpoint-xl:               959px; // Extra large screen / wide desktop
 
 // Color table
 
-$white:                       #ffffff;
-$black:                       #000000;
+$white:                         #ffffff;
+$black:                         #000000;
 
-$green:                       #64c800;
-$green-hover:                 #67ad21;
-$green-active:                #497f12;
-$green-border-bottom:         #59b200;
+$text-color:                     #4f4f4f;
 
-
-$blue:                        #1b8aaa;
-$blue-hover:                  #596799;
-$blue-focus:                  #78c5db;
-$blue-active:                 #687bc4;
-$blue-disabled:               #80c9de;
+$brown:                         #867d67;
+$brown-light:                   #ab8b3f;
+$red:                           rgb(239, 65, 53);
+$brown-lightest:                #aba495;
+$pale:                          #f7f7f7;
 
 
-$grey-bg:                     #f4f6f9;
-
-$grey-header:                 #3f4049;
-$grey-title:                  #3d3e46;
-$grey-text:                   #505a64;
-$grey-form-text:              #46505a;
-
-$grey-input-text:             #a8b6c7;
-$grey-input-border:           #a8b6c7;
-
-$grey-input-text-hover:       #c3c3c3;
-$grey-input-border-hover:     #a8a9ab;
-$grey-input-text-focus:       #c3c3c3;
-$grey-input-border-focus:     #e8e8e8;
-
-$grey-input-text-active:      #6e6c6c;
-
-$grey-input-text-disabled:    #c3c3c3;
-$grey-input-border-disabled:  #e8e8e8;
-$grey-input-bg-disabled:      #f5f5f5;
-
-
+$header-gradient-bg:            linear-gradient(180deg,#fff 0,#fff 29%,#fdfdfd 37%,#e7e6e6 86%,#e2e2e2);
+$search-gradient-bg:            linear-gradient(0deg, rgb(226, 226, 225), rgb(255, 255, 254));
 
 
 
@@ -77,12 +53,9 @@ $grey-input-bg-disabled:      #f5f5f5;
 //  Typography
 //------------------------------------------------------------------------------
 
-
-//$font-family--serif:          Georgia, "Times New Roman", Times, serif;
-//$font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family:                 myriad-pro, "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;;
 
 
-
-$font-size:                   18px;
+$font-size:                   15px;
 
 

@@ -2,30 +2,17 @@
   display: inline-block;
   text-align: center;
   outline: none;
-  border: none;
-  font-size: 18px;
+  color: inherit;
+  border: 1px solid currentColor;
   line-height: 1;
-  border-radius: 17px;
-  background-color: $green;
-  padding: 8px 53px;
+  padding: 10px 25px;
   margin: 0;
-  color: $white;
-  @media (max-width: $breakpoint-md){
-    border-radius: 5px;
-    width: 100%;
-    letter-spacing: 0.02em;
-  }
 
   &:hover{
-    background-color: $green-hover;
+    background-color: rgba($text-color, 0.7);
+    color: $white;
   }
-  &:focus{
-    background-color: #fff;
-    box-shadow: -1px 0px 6.93px 0.07px rgba(103, 173, 33, 0.5);
-    color: $grey-text;
-  }
-  &:active{
-    background-color: $green-active;
+  &--header{
     color: $white;
   }
 }

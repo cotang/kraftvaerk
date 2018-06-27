@@ -1,115 +1,123 @@
-// .header{
-//   background-color: $grey-header;
-//   width: 100%;
-//   position: fixed;
-//   z-index: 5;
+.header{
 //   @media (max-width: $breakpoint-md){
 //     padding: 0 15px;
 //   }
 
-//   &__wrapper{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-//   &__logo{
-//     text-align: center;
-//     margin: 12px 0 15px;
-//   }
-//   &__btn{
-//     position: relative;
-//     top: 2px;
-//     @media (max-width: $breakpoint-md){
-//       display: none;
-//     }
-//   }
-// }
-
-// .logo{
-//   width: 150px;
-//   height: 43px;
-//   display: block;
-// }
-
-// .nav{
-//   &__list{
-//     padding-left: 0;
-//     margin: 0;
-//     list-style-type: none;
-//     display: flex;
-//     justify-content: space-between;
-//     @media (max-width: $breakpoint-md){
-//       display: none;
-//       align-items: center;
-//       flex-direction: column;
-//       position: absolute;
-//       z-index: 2;
-//       top: 100%;
-//       left: 0;
-//       width: 100%;
-//       background-color: $grey-header;
-//     }
-//   }
-//   &__item{
-//     > a{
-//       display: inline-block;
-//       padding: 5px 27px;
-//       color: $white;
-//       &:hover{
-//         text-decoration: underline;
-//       }
-//       &:focus{
-//         outline: none;
-//         font-weight: 600;
-//       }
-//       &:active{
-//         text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-//       }
-//       &:disabled{
-//         color: #fcfefd;
-//       }
-//       @media (max-width: $breakpoint-xl){
-//         padding: 5px 10px;
-//       }
-//       @media (max-width: $breakpoint-md){
-//         width: 100%;
-//         text-align: center;
-//       }
-//     }
-//   }
-//   &__hamburger{
-//     display: none;
-//     @media (max-width: $breakpoint-md){
-//       display: block;
-//     }
-//   }
-// }
+  &__upper{
+    background-image: $header-gradient-bg;
+  }
+  &__title-wrapper{
+    padding: 15px 0;
+    position: relative;
+  }
+  &__logo{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  &__title{
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 160px;
+    color: $brown;
+    font-size: 20px;
+  }
 
 
+  &__nav{
+    background-color: $brown;
+    position: relative;
+  }
+  &__nav-wrapper{
+    padding: 20px 0 20px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-// .hamburger{
-//   display: inline-block;
-//   padding: 17px 6px 13px;
-//   border-radius: 3px;
-//   span{
-//     display: block;
-//     width: 20px;
-//     margin: 0 auto;
-//     height: 2px;
-//     background-color: $white;
+  }
+}
 
-//     &:after, &:before{
-//       content: "";
-//       display: block;
-//       width: 20px;
-//       height: 2px;
-//       background-color: $white;
-//     }
-//     &:before{
-//       transform: translateY(-6px);
-//     }
-//     &:after{
-//       transform: translateY(4px);
-//     }
-//   }
-// }
+.logo{
+  display: block;
+  img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.nav{
+  color: $white;
+  text-transform: uppercase;
+  // position: relative;
+  &__list{
+    font-size: 16px;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    @media (max-width: $breakpoint-md){
+      display: none;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      z-index: 2;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $brown;
+    }
+  }
+  &__item{
+    > a{
+      color: inherit;
+      display: inline-block;
+      padding: 10px 20px;
+      &:hover{
+        background-color: $brown-lightest;
+      }
+      @media (max-width: $breakpoint-md){
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &__hamburger{
+    display: none;
+    @media (max-width: $breakpoint-md){
+      display: block;
+    }
+  }
+  svg{
+    fill: $white;
+  }
+}
+
+
+
+.hamburger{
+  display: inline-block;
+  padding: 17px 6px 13px;
+  border-radius: 3px;
+  span{
+    display: block;
+    width: 20px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: $white;
+
+    &:after, &:before{
+      content: "";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $white;
+    }
+    &:before{
+      transform: translateY(-6px);
+    }
+    &:after{
+      transform: translateY(4px);
+    }
+  }
+}

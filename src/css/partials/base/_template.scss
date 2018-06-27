@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-//  Базовые стили
+//  Base styles
 //------------------------------------------------------------------------------
 
 *,
@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   background-color: $white;
-  color: $grey-text;
+  color: $text-color;
   @include font-family('Myriad Pro', normal, normal);
   font-size: $font-size;
   line-height: normal;
@@ -24,8 +24,7 @@ body {
 
 
 a {
-  color: $grey-text;
-
+  color: $brown-light;
   text-decoration: none;
   @include transition();
 
@@ -55,5 +54,12 @@ img {
   }
   @media (max-width: $breakpoint-md){
     max-width: 100%;
+    padding: 0 10px;
   }
+}
+
+.title{
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 14px;
 }

@@ -1,7 +1,7 @@
 ;(function(window, document) {
   'use strict';
-  var file = 'img/svg-sprite.svg', // путь к файлу спрайта на сервере
-      revision = 6;            // версия спрайта
+  var file = 'img/svg-sprite.svg',
+      revision = 2; 
   if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) return true;
   var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
     request,

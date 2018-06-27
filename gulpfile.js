@@ -56,6 +56,7 @@ var path = {
   build: {
     html: 'build',
     js: 'build/js/',
+    json: 'build/js/',
     css: 'build/css/',
     img: 'build/img/',
     fonts: 'build/fonts/',
@@ -69,6 +70,7 @@ var path = {
     html: ['src/html/**/*.pug', '!src/html/partials/abstracts/bemto/**/*.*'],
     htmlDir: 'src/html',
     js: 'src/js/*.js',
+    json: 'src/js/*.json',
     css: './src/css/*.scss',
     img: ['src/img/**/**.*', '!src/img/png-sprite/*.*', '!src/img/svg-sprite/*.*'],
     fonts: 'src/fonts/**/*.*',
@@ -79,6 +81,7 @@ var path = {
   watch: {
     html: 'src/html/**/*.pug',
     js: 'src/js/**/*.js',
+    json: 'src/js/**/*.json',
     css: 'src/css/**/*.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
@@ -200,6 +203,11 @@ gulp.task('php', function() {
     .pipe(gulp.dest(path.build.php))
 });
 
+// Copying json
+gulp.task('json', function() {
+  return gulp.src(path.src.json)
+    .pipe(gulp.dest(path.build.json))
+});
 // Clean
 gulp.task('clean', function () {
   return del(path.clean);
@@ -207,7 +215,7 @@ gulp.task('clean', function () {
 
 // Overall build
 gulp.task('build', function (cb) {
-  runSequence('clean', ['pug', 'png-sprites', 'svg-sprites', 'img', 'sass', 'js', 'fonts', 'php'], cb);
+  runSequence('clean', ['pug', 'png-sprites', 'svg-sprites', 'img', 'sass', 'json', 'js', 'fonts', 'php'], cb);
 });
 
 
@@ -239,6 +247,9 @@ gulp.task('watch', ['setWatch', 'browserSync'], function(){
   });
   gulp.watch([path.watch.js], function(event, cb) {
     gulp.start('js');
+  });
+  gulp.watch([path.watch.json], function(event, cb) {
+    gulp.start('json');
   });
   gulp.watch([path.watch.img], function(event, cb) {
     gulp.start('img');
