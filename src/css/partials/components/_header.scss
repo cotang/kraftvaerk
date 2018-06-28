@@ -1,13 +1,9 @@
 .header{
-//   @media (max-width: $breakpoint-md){
-//     padding: 0 15px;
-//   }
-
   &__upper{
     background-image: $header-gradient-bg;
   }
   &__title-wrapper{
-    padding: 15px 0;
+    padding: 12px 0;
     position: relative;
   }
   &__logo{
@@ -17,11 +13,15 @@
     left: 0;
   }
   &__title{
+    @include font-family('Myriad Pro Bold', normal, normal);
     margin: 0;
     text-transform: uppercase;
     padding-left: 160px;
     color: $brown;
     font-size: 20px;
+    @media (max-width: $breakpoint-md){
+      padding-left: 120px;
+    }
   }
 
 
@@ -34,7 +34,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    @media (max-width: $breakpoint-md){
+      padding-left: 120px;
+    }
   }
 }
 
@@ -66,6 +68,9 @@
       left: 0;
       width: 100%;
       background-color: $brown;
+    }
+    &.nav__list--shown{
+      display: flex;
     }
   }
   &__item{

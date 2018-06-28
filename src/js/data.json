@@ -8,13 +8,34 @@
       "email": "lauri@tammijuuri.fi",
       "text": "Tammijuuri on ystävällinen ja ihmisläheinen maalausliike Helsingistä. Keskityn pääasiassa asuinhuoneistojen ja pienten liiketilojen pintakäsittelyyn. Toiminta-alueeni on pääosin pääkaupunkiseudulla. Maalarin palveluiden lisäksi teen myös tapetoinnit, laminaattilattioiden asennukset, nauhoitus-, tasoite-, ja verkotustyöt sekä pienet ulkomaalaustyöt ammattitaidolla ja asiakkaiden toiveiden ehdolla. Maalauspalvelussani huomioin ympäristön ja luonnon muun muassa kierrättämällä kaiken mahdollisen työstä aiheutuvan jätteen ja käyttämällä ympäristöystävällisiä tarvikkeita ja materiaaleja.",
       "categories": [
-        "Terassit",
-        "Katot",
-        "Puujulkisivut",
-        "Tasoitustyöt",
-        "Sisämaalaukset",
-        "Lattiat",
-        "Ovet ikkunat ja kalusteet"
+        {
+          "title": "Terassit",
+          "id": 1
+        },
+        {
+          "title": "Katot",
+          "id": 2
+        },
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        },
+        {
+          "title": "Tasoitustyöt",
+          "id": 4
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Lattiat",
+          "id": 7
+        },
+        {
+          "title": "Ovet ikkunat ja kalusteet",
+          "id": 9
+        }
       ],
       "NumberOfProjects": 20,
       "NumberOfPainters": 1,
@@ -28,7 +49,10 @@
       "email": "antti.puumanen@gmail.com",
       "text": "Vuodesta 2010 toiminimellä maalausalan pien urakoitsijana ja ali-urakoitsijana töitä tehnyt yhdenmiehen yritys. Koulutukseltani olen Maalari-artesaani.pt sekä Restaurointi-Kisälli.at. Erikois-osaamisena Marmorointi/kivijäljennökset.",
       "categories": [
-        "Efektimaalaus"
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        }
       ],
       "NumberOfProjects": 19,
       "NumberOfPainters": 2,
@@ -42,7 +66,10 @@
       "email": "marjo@designsaarinen.fi",
       "text": "Tarjoan Sinulle sisustussuunnittelu- ja erikoismaalauspalvelua, jota teen suurella sydämellä -asiakkaan toiveiden ja mieltymysten mukaisesti. Saat pikaiset vinkit tai kokonaisvaltaiset sisustussuunnitelmat, oli kohteena sitten koti, vapaa-ajan asunto, julkinen tila tai työympäristö.",
       "categories": [
-        "Efektimaalaus"
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        }
       ],
       "NumberOfProjects": 17,
       "NumberOfPainters": 40,
@@ -56,12 +83,30 @@
       "email": "natunen.anne@gmail.com",
       "text": "Artisania on sisustusmaalaukseen, tapetointiin, erikois –ja efektimaalaukseen erikoistunut yritys.",
       "categories": [
-        "Puujulkisivut",
-        "Tasoitustyöt",
-        "Efektimaalaus",
-        "Sisämaalaukset",
-        "Lattiat",
-        "Ovet ikkunat ja kalusteet"
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        },
+        {
+          "title": "Tasoitustyöt",
+          "id": 4
+        },
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Lattiat",
+          "id": 7
+        },
+        {
+          "title": "Ovet ikkunat ja kalusteet",
+          "id": 9
+        }
       ],
       "NumberOfProjects": 15,
       "NumberOfPainters": 12,
@@ -75,15 +120,42 @@
       "email": "telakalle@telakalle.fi",
       "text": "Olemme sisäremonttien moniosaaja teemme kaiken lattiasta kattoon. Meidän kautta tilaaja saa tarvittaessa sähkömiehet ja putkarit monista yhteistyökumppaneistamme. Laskutus menee meidän kautta joten saat vain yhden laskun.",
       "categories": [
-        "Lattiat",
-        "Kivijulkisivut ja sokkelit",
-        "Ovet ikkunat ja kalusteet",
-        "Terassit",
-        "Katot",
-        "Puujulkisivut",
-        "Tasoitustyöt",
-        "Efektimaalaus",
-        "Sisämaalaukset"
+        {
+          "title": "Terassit",
+          "id": 1
+        },
+        {
+          "title": "Katot",
+          "id": 2
+        },
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        },
+        {
+          "title": "Tasoitustyöt",
+          "id": 4
+        },
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Lattiat",
+          "id": 7
+        },
+        {
+          "title": "Kivijulkisivut ja sokkelit",
+          "id": 8
+        },
+        {
+          "title": "Ovet ikkunat ja kalusteet",
+          "id": 9
+        }
       ],
       "NumberOfProjects": 14,
       "NumberOfPainters": 17,
@@ -97,8 +169,14 @@
       "email": "kari.hirvimaki@kattopatrol.fi",
       "text": "Uudistamme kattosi! Kattopatrol on nuorekas palveluhenkinen kattomaalauksiin erikoistunut yritys. Pesemme, pinnoitamme ja maalaamme kaiken tyyppisiä kattoja. Pelti-, mineriitti-, huopa- ja tilikatot. Haluamme tehdä työmme aina 100 % tyytyväisyystakuulla. Tutustu referensseihimme ja asiakkaiden tarinoihin kuinka olemme työssämme onnistuneet www.kattopatrol.fi tai lataa ilmainen kattohuollon Ostajan Opas.",
       "categories": [
-        "Katot",
-        "Puujulkisivut"
+        {
+          "title": "Katot",
+          "id": 2
+        },
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        }
       ],
       "NumberOfProjects": 12,
       "NumberOfPainters": 4,
@@ -112,13 +190,34 @@
       "email": "katemaalaus@gmail.com",
       "text": "Kaikki maalaustyöt ammattitaidolla,luotettavasti! - Maalaustyöt/rakennustyöt takuulla ja Suomalaisttain! - Ilmainen arviointi ja katselmus. *Tiili/Varttikatteet *Peltikatot *Julkisivut *Muut maalaus/tasoitetyöt *Kalusteasennukset,laminaatit/parketit *Väliseinät,rungot,yms.. * Vesieristykset ( VTT sertifikaatti).",
       "categories": [
-        "Katot",
-        "Puujulkisivut",
-        "Tasoitustyöt",
-        "Sisämaalaukset",
-        "Lattiat",
-        "Kivijulkisivut ja sokkelit",
-        "Ovet ikkunat ja kalusteet"
+        {
+          "title": "Katot",
+          "id": 2
+        },
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        },
+        {
+          "title": "Tasoitustyöt",
+          "id": 4
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Lattiat",
+          "id": 7
+        },
+        {
+          "title": "Kivijulkisivut ja sokkelit",
+          "id": 8
+        },
+        {
+          "title": "Ovet ikkunat ja kalusteet",
+          "id": 9
+        }
       ],
       "NumberOfProjects": 11,
       "NumberOfPainters": 9,
@@ -132,15 +231,42 @@
       "email": "info@navaco.fi",
       "text": "Vaihtoehto valkoiselle ! Teen kaikki maalausalaan liittyvät työt, myös erikoismaalaukset, koristemaalaukset, fantasiamaalaukset, erilaiset pintojen käsittelyt sekä taidekäsityöt ym. ym. Yksityiset sekä julkiset tilat. Uudis- ja saneerauskohteet. Pääasiallisesti etelä-suomessa, tarvittaessa kyllä laajennan reviiriäni. Kaikki työni on tehty pensseleillä sekä muilla tekniikoilla, kynäruiskua ei ole käytetty. Kotisivuillani www.navaco.fi palvelut sivulta löytyy kuvagalleriasta lisää kuvia vuosien varsilta. Suunnittelen ja toteutan juuri Teidän tarpeita vastaavan kokonaisuuden.",
       "categories": [
-        "Terassit",
-        "Katot",
-        "Puujulkisivut",
-        "Tasoitustyöt",
-        "Efektimaalaus",
-        "Sisämaalaukset",
-        "Lattiat",
-        "Kivijulkisivut ja sokkelit",
-        "Ovet ikkunat ja kalusteet"
+        {
+          "title": "Terassit",
+          "id": 1
+        },
+        {
+          "title": "Katot",
+          "id": 2
+        },
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        },
+        {
+          "title": "Tasoitustyöt",
+          "id": 4
+        },
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Lattiat",
+          "id": 7
+        },
+        {
+          "title": "Kivijulkisivut ja sokkelit",
+          "id": 8
+        },
+        {
+          "title": "Ovet ikkunat ja kalusteet",
+          "id": 9
+        }
       ],
       "NumberOfProjects": 10,
       "NumberOfPainters": 5,
@@ -154,9 +280,18 @@
       "email": "salla.ikonen@gmail.com",
       "text": "",
       "categories": [
-        "Efektimaalaus",
-        "Sisämaalaukset",
-        "Kivijulkisivut ja sokkelit"
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Kivijulkisivut ja sokkelit",
+          "id": 8
+        }
       ],
       "NumberOfProjects": 7,
       "NumberOfPainters": 19,
@@ -170,13 +305,34 @@
       "email": "info@maalausliikekaksio.fi",
       "text": "Maalausta ja saneerausta Tapetoinnit, sisä-ja ulkomaalaukset, peltikatonmaalaukset ja kalusteasennukset.",
       "categories": [
-        "Katot",
-        "Puujulkisivut",
-        "Efektimaalaus",
-        "Sisämaalaukset",
-        "Lattiat",
-        "Kivijulkisivut ja sokkelit",
-        "Ovet ikkunat ja kalusteet"
+        {
+          "title": "Katot",
+          "id": 2
+        },
+        {
+          "title": "Puujulkisivut",
+          "id": 3
+        },
+        {
+          "title": "Efektimaalaus",
+          "id": 5
+        },
+        {
+          "title": "Sisämaalaukset",
+          "id": 6
+        },
+        {
+          "title": "Lattiat",
+          "id": 7
+        },
+        {
+          "title": "Kivijulkisivut ja sokkelit",
+          "id": 8
+        },
+        {
+          "title": "Ovet ikkunat ja kalusteet",
+          "id": 9
+        }
       ],
       "NumberOfProjects": 5,
       "NumberOfPainters": 24,

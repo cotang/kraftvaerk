@@ -1,7 +1,3 @@
-.search-results{
-
-}
-
 .painter{
   padding: 15px 0;
   border-top: 1px solid #e2e2e1;
@@ -35,6 +31,7 @@
   }
 
   &__text-wrapper{
+    padding: 0 10px;
     flex: 0 0 calc(100% - 340px);
     max-width: calc(100% - 340px);
     @media (max-width: $breakpoint-md){
@@ -43,7 +40,13 @@
     }
   }
   &__title{
+    @include font-family('Myriad Pro Bold', normal, normal);
     margin: 0 0 5px;
+    a{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
   &__address{
     font-size: 13px;
@@ -58,20 +61,23 @@
   }
   &__tel{
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   &__email{
     display: inline-block;
   }
   &__text{
     margin-top: 5px;
+    font-size: 16px;
     line-height: 1.5;
-    font-weight: 200;
+    @include font-family('Myriad Pro Light', normal, normal);
   }
   &__categories{
+    font-size: 14px;
     margin: 5px 0;
-    font-weight: bold;
+    @include font-family('Myriad Pro Bold', normal, normal);
     span{
+      display: inline-block;
       padding-right: 3px;
       &:after{
         content: '•';
@@ -91,6 +97,8 @@
     border-left: 1px dotted #ccc;
     padding: 10px;
     @media (max-width: $breakpoint-md){
+      flex: 0 0 170px;
+      max-width: 170px;
       order: -1;
     }
   }

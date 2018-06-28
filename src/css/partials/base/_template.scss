@@ -17,7 +17,7 @@ body {
   margin: 0;
   background-color: $white;
   color: $text-color;
-  @include font-family('Myriad Pro', normal, normal);
+  @include font-family('Myriad Pro Regular', normal, normal);
   font-size: $font-size;
   line-height: normal;
 }
@@ -59,6 +59,7 @@ img {
 }
 
 .title{
+  @include font-family('Myriad Pro Bold', normal, normal);
   text-transform: uppercase;
   margin: 0;
   font-size: 14px;
