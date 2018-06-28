@@ -1,7 +1,7 @@
 .search-controls{
   &__upper{
     background-image: $search-gradient-bg;
-  }  
+  }
   &__wrapper{
     display: flex;
     justify-content: space-between;
@@ -68,15 +68,15 @@
       color: inherit;
       border-bottom: 3px solid transparent;
       display: inline-block;
-      padding: 5px 0;  
+      padding: 5px 0;
       &:hover{
         border-bottom: 3px solid #3a3f6d;
-      }    
+      }
     }
     &--active{
       a{
         border-bottom: 3px solid #3a3f6d;
-      }      
+      }
     }
   }
 }
@@ -95,19 +95,22 @@
   }
   &__item{
     margin: 0 5px 5px;
-    a{      
+    a{
       color: inherit;
       display: inline-block;
       background-color: $white;
       border-radius: 30px;
       padding: 3px 15px;
       border: 1px solid #867d67;
+      &:hover{
+        background-color: rgba($text-color, 0.1);
+      }
     }
     &--active{
       a{
         background-color: rgba($text-color, 0.7);
         color: $white;
-      }      
+      }
     }
   }
   &__text{
